@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <p id="exam1"></p>
+    <p id="exam2"></p>
+    
+    <script>
+        
+        /* Example 1*/
+        // Create a function to compute the addition of two numbers
+        function addition(x, y) {
+            return x + y;
+        }
+        // Call the function and output the result
+        document.getElementById('exam1').innerHTML = addition(3, 4)
+
+        /* Example 2*/  
+        function division(x, y){
+            return x/y;
+        }
+        // Call the function and assign the result to a variable x
+        var x = division(15,3);
+        document.getElementById('exam2').innerHTML = x;
+    </script>
+</body>
+</html>
