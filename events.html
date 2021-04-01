@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <!-- Add an onclick attribute with script to a <button> element -->
+    <button onclick="document.getElementById('exam1').innerHTML = Date()">Click me to show time</button>
+    <p id="exam1"></p>
+
+    <!-- Change the content of its own element -->
+    <button onclick="this.innerHTML = Date()">Click me to show time</button><br>
+    
+    <!-- Call function by the event attribute -->
+    <button onclick="displayDate()">Click me to show time</button>
+    <p id="exam2"></p>
+    <script>
+        function displayDate() {
+            document.getElementById('exam2').innerHTML = Date();
+        }
+    </script>
+
+</body>
+</html>
