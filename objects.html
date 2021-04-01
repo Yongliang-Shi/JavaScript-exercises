@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    <p id="exam1"></p>
+    <p id="exam2"></p>
+    <script>
+        /* Example 1*/
+        var planet = {name:'earth', position:'3rd', color:'blue'};
+        // output some data of the object
+        document.getElementById('exam1').innerHTML = planet.name;
+
+        /* Example 2*/
+        // Declare an object with both property and method
+        var person = {
+            firstName: "firstname",
+            lastName: "lastname",
+            email: function() {
+                return this.firstName + "." + this.lastName + "@email.com"
+            }
+        };
+        // Access the object method
+        document.getElementById('exam2').innerHTML = person.email();
+    </script>
+</body>
+</html>
